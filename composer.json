@@ -1,0 +1,7 @@
+{
+    "description": "Offloc website",
+    "homepage": "http://offloc.com",
+    "require": {
+        "sculpin/sculpin": "2.*@dev"
+    }
+}

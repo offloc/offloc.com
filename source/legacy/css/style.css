@@ -1,0 +1,302 @@
+
+/* ==|== primary styles =====================================================
+   Author: Beau Simensen <beau@offloc.com>
+   ========================================================================== */
+
+body {
+    font-size: 1em;
+    color: #959494;
+    font-family: arial, sans-serif;
+}
+
+header .band .message,
+nav#offloc-primary-navigation,
+#content,
+header #projects-container {
+    min-width: 320px;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/*
+#content {
+    padding-left: .5em;
+    padding-right: .5em;
+}
+*/
+
+#content img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    margin: 1em auto;
+}
+
+blockquote {
+    margin: 1em 1em;
+}
+
+
+header.offloc {
+    display: block;
+    border-style: solid;
+    border-color: #aecc52;
+    border-width: 2px 0px;
+    padding: 1em 0;
+    background-color: #efefef;
+    margin-top: .25em;
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, .15);
+     -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, .15);
+          box-shadow: 0px 1px 4px rgba(0, 0, 0, .15);
+}
+
+header.offloc #amp-project,
+header.offloc #a2d-project {
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+}
+
+
+header.offloc #amp-project a,
+header.offloc #a2d-project a {
+    text-indent: -20000px;
+    display: inline-block;
+    margin: 0 auto;
+    background-repeat:no-repeat;
+    background-position:center; 
+}
+header.offloc #amp-project a {
+    width: 75px;
+    height: 75px;
+    background-image: url(amp-smaller.png);
+}
+
+header.offloc #a2d-project a {
+    width: 98px;
+    height: 75px;
+    background-image: url(a2d-smaller.png);
+}
+
+nav#offloc-primary-navigation {
+    margin-top: 15px;
+}
+nav#offloc-primary-navigation a {
+    margin: .25em;
+}
+
+footer a.offloc-icon {
+    margin-bottom: .5em;
+}
+a.offloc-icon {
+    display: inline-block;
+    background-image: url(offloc-tiny.png);
+    width: 92px;
+    height: 24px;
+    text-indent: -20000px;
+}
+
+#content p {
+    line-height: 1.25em;
+    margin-left: 1em;
+    margin-right: 1em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .15);
+}
+
+#content blockquote p {
+    margin-bottom: .5em;
+}
+
+#content blockquote footer {
+    margin-left: 2em;
+}
+
+footer.site {
+    text-align: center;
+    margin: 75px auto 25px auto;
+    font-size: .75em;
+    color: rgba(149, 148, 148, .5);
+}
+
+.email-container {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.button {
+    -moz-box-shadow: 0 1px 4px rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.3);
+    box-shadow: 0 1px 4px rgba(0,0,0,.3);
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
+    border-radius: 1em;
+    border: 1px solid #145072;
+    background: #2567AB;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    text-shadow: 0 -1px 1px #145072;
+    text-decoration: none;
+    background-image: -moz-linear-gradient(top,#4e89c5,#2567ab);
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#5f9cc5),color-stop(1,#396b9e));
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#4e89c5', EndColorStr='#2567ab')";
+    text-align: center;
+    cursor: pointer;
+    text-shadow: 0 -1px 1px #145072;
+    padding: .6em 25px;
+    font-size: 125%;
+    -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
+}
+
+.button:hover {
+    color: white;
+    border: 1px solid #00516e;
+    background: #4b88b6;
+    text-shadow: 0 -1px 1px #014d68;
+    text-decoration: none;
+    cursor: pointer;
+    background-image: -moz-linear-gradient(top,#72b0d4,#4b88b6);
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#72b0d4),color-stop(1,#4b88b6));
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#72b0d4', EndColorStr='#4b88b6')";
+    -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
+}
+
+header.amp {
+    display: block;
+    /*
+    border-style: solid;
+    border-color: #aecc52;
+    border-width: 0 0 2px 0px;
+    */
+    padding: 0 0 2em 0;
+    background-image: url(amp-header-bg.png);
+    margin: 0 0 2em 0;
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, .15);
+     -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, .15);
+          box-shadow: 0px 1px 4px rgba(0, 0, 0, .15);
+}
+
+header.amp .names {
+    margin: -4em auto -1em auto;
+    width: 300px;
+    height: 305px;
+    background-image: url(amp-names.png);
+}
+header.amp .short-name,
+header.amp .long-name {
+    display: none;
+}
+
+header.amp .band {
+    background-color: #010102;
+}
+
+header.amp .band .message {
+    padding: .25em .5em;
+}
+header.amp .band .message p {
+    margin: .75em 0;
+}
+
+.kickstarter-header,
+.press-header {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe,  
+.video-container object,  
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.kickstarter-widget {
+    display: block;
+    margin: 1em auto 2em auto;
+}
+
+/* ==|== media queries ======================================================
+   PLACEHOLDER Media Queries for Responsive Design.
+   These override the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+  /* Style adjustments for viewports 480px and over go here */
+
+
+    header.amp .names {
+        width: 357px;
+        height: 363px;
+        background-image: url(amp-names-larger.png);
+    }
+
+    header.amp .band .message {
+        font-size: 1.4em;
+    }
+
+    blockquote {
+        margin: 1em 2em;
+    }
+
+    #content p {
+        font-size: 1.25em;
+        line-height: 1.35em;
+    }
+
+    header.offloc #amp-project a {
+        width: 150px;
+        height: 150px;
+        background-image: url(amp.png);
+    }
+
+    header.offloc #a2d-project a {
+        width: 195px;
+        height: 150px;
+        background-image: url(a2d.png);
+    }
+
+    .kickstarter-header {
+        display: none;
+    }
+
+    .kickstarter-widget {
+        float: right;
+        margin-left: 2em;
+        margin-bottom: 2em;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+  /* Style adjustments for viewports 768px and over go here */
+
+    nav#offloc-primary-navigation {
+        padding-left: 0px;
+    }
+
+    /*
+    #content {
+        padding-left: .25em;
+        padding-right: .25em;
+    }
+    */
+
+    header.offloc {
+        padding: 3em 0;
+        background-color: #efefef;
+        margin-top: 1em;
+    }
+
+}

@@ -1,0 +1,177 @@
+body {
+	background-image: url(background.png);
+	color: #959494;
+}
+
+body p {
+	font-family: serif;
+}
+
+div.masthead {
+	margin: 2em 0;
+}
+
+div.masthead h1 {
+	width: 140px;
+	height: 35px;
+	background-image: url(offloc-logo.png);
+}
+
+section.products h2 {
+	margin-top: 1em;
+	margin-bottom: -1em;
+}
+section.products .info p,
+div.masthead p {
+	font-size: 1.5em;
+	line-height: 1.25em;
+}
+
+div.masthead p {
+	margin: 1em 1em 1em 0;
+}
+
+div.products {
+	background-image: url(side-background.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+section.info .products .product {
+	margin: 2em 4em;
+}
+
+.products .product a.hide-text {
+	display: block;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: ;
+}
+
+.products .product.amp a.hide-text {
+	width: 75px;
+	height: 75px;
+	background-image: url(amp-logo.png);
+}
+
+.products .product.a2d a.hide-text {
+	width: 150px;
+	height: 30px;
+	background-image: url(a2d-logo.png);
+}
+
+section.products .product .info a.hide-text {
+	margin-bottom: 10px;
+}
+
+section.products .container.list-item {
+	margin-top: 2em;
+	border-top: 1px solid rgba(149, 149, 149, .25);
+	padding-top: 2em;
+}
+footer.site {
+	margin-top: 2em;
+	border-top: 1px solid rgba(149, 149, 149, .25);
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+}
+
+
+/* Portrait tablet to landscape and larger */
+@media (min-width: 768px) {
+	section.products .product {
+		margin: 0 auto;
+		max-width: 640px;
+	}
+	div.masthead {
+		margin: 10em 0;
+	}
+	div.products {
+		height: 500px;
+	}
+	section.products .container > .row-fluid {
+		margin-top: 5em;
+		padding-top: 5em;
+	}
+	footer.site {
+		margin-top: 5em;
+		padding-top: 5em;
+		text-align: center;
+	}
+	section.products .product {
+		margin-top: 5em;
+	}
+	section.info .products .product.amp a.hide-text {
+		padding: 0 37.5px;
+	}
+	section.info .products .product.a2d a.hide-text {
+		padding: 22.5px 0;
+	}
+	section.products .product .info a.hide-text {
+		margin-top: 50px;
+	}
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+	section.info .products .product.amp {
+		margin-top: 11em;
+	}
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 980px) and (max-width: 1199px) {
+	section.info .products .product.amp {
+		margin-top: 10em;
+	}
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+	section.info .products .product.amp {
+		margin-top: 9em;
+	}
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	div.masthead h1 {
+		background-image: url(offloc-logo-2x.png);
+		background-size: 140px 35px;
+	}
+
+	.products .product.amp a .hide-text{
+		background-image: url(amp-logo-2x.png);
+		background-size: 75px 75px;
+	}
+
+	.products .product.a2d a.hide-text {
+		background-image: url(a2d-logo-2x.png);
+		background-size: 150px 30px;
+	}
+}
